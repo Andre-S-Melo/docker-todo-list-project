@@ -11,6 +11,8 @@ services:
 
   todofront:
     image: todofrontend
+    ports:
+      - 3000:3000
     depends_on:
       - "todoback"
     environment:
